@@ -12,11 +12,11 @@ public class Main {
         p.addObserver(s1);
         p.addObserver(s2);
 
-        p.sendMessage(new Message("Hallo Semra"));   //s1 and s2 will receive the update
+        p.sendMessage(new Message("Hello Maxi"));   //s1 and s2 will receive the update
 
         p.deleteObserver(s1);
         p.addObserver(s3);
 
-        p.sendMessage(new Message("Hallo Serdar")); //s2 and s3 will receive the update
+        p.sendMessage(new Message("Hello Max")); //s2 and s3 will receive the update
     }
 }

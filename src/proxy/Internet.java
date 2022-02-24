@@ -1,5 +1,8 @@
 package proxy;
 
-public interface Internet {
-    public void connectTo(String serverhost) throws Exception;
+public class Internet implements InternetInterface {
+    @Override
+    public void connect(String url) {
+        System.out.println("Connecting to " + url);
+    }
 }
