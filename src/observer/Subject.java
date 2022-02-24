@@ -1,10 +1,9 @@
 package observer;
 
 public interface Subject {
+    public void addObserver(Observer observer);
 
-    public void attach(Observer o);
+    public void deleteObserver(Observer observer);
 
-    public void detach(Observer o);
-
-    public void notifyUpdate(Message m);
+    public void sendMessage(Message message);
 }

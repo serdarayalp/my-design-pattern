@@ -2,13 +2,13 @@ package observer;
 
 public class Message {
 
-    final String messageContent;
+    final String message;
 
-    public Message(String m) {
-        this.messageContent = m;
+    public Message(String message) {
+        this.message = message;
     }
 
-    public String getMessageContent() {
-        return messageContent;
+    public String getMessage() {
+        return message;
     }
 }

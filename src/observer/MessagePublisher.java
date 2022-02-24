@@ -5,22 +5,22 @@ import java.util.List;
 
 public class MessagePublisher implements Subject {
 
-    private List<Observer> observers = new ArrayList<>();
+    private List<Observer> observerList = new ArrayList<>();
 
     @Override
-    public void attach(Observer o) {
-        observers.add(o);
+    public void addObserver(Observer observer) {
+        observerList.add(observer);
     }
 
     @Override
-    public void detach(Observer o) {
-        observers.remove(o);
+    public void deleteObserver(Observer observer) {
+        observerList.remove(observer);
     }
 
     @Override
-    public void notifyUpdate(Message m) {
-        for (Observer o : observers) {
-            o.update(m);
+    public void sendMessage(Message message) {
+        for (Observer observer : observerList) {
+            observer.update(message);
         }
     }
 }
