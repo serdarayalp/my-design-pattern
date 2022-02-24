@@ -3,15 +3,15 @@ package command;
 public class Main {
     public static void main(String[] args) {
 
-        Stock abcStock = new Stock();
+        Stock stock = new Stock("Harddisk", 1000);
 
-        BuyStock buyStockOrder = new BuyStock(abcStock);
-        SellStock sellStockOrder = new SellStock(abcStock);
+        BuyStockCommand buyStockCommand = new BuyStockCommand(stock);
+        SellStockCommand sellStockCommand = new SellStockCommand(stock);
 
         Broker broker = new Broker();
 
-        broker.takeOrder(buyStockOrder);
-        broker.takeOrder(sellStockOrder);
+        broker.takeOrder(buyStockCommand);
+        broker.takeOrder(sellStockCommand);
 
         broker.placeOrders();
     }
