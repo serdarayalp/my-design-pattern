@@ -20,8 +20,8 @@ public class Manager implements Employee {
         employees.add(employee);
     }
 
-    public Employee getChild(int i) {
-        return employees.get(i);
+    public Employee getEmployee(int index) {
+        return employees.get(index);
     }
 
     public String getName() {
@@ -33,6 +33,7 @@ public class Manager implements Employee {
     }
 
     public void print() {
+
         System.out.println("-------------");
         System.out.println("Name =" + getName());
         System.out.println("Salary =" + getSalary());
@@ -48,5 +49,4 @@ public class Manager implements Employee {
     public void remove(Employee employee) {
         employees.remove(employee);
     }
-
 }

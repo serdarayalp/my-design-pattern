@@ -10,11 +10,7 @@ public class Developer implements Employee {
         this.salary = salary;
     }
 
-    public void add(Employee employee) {
-
-    }
-
-    public Employee getChild(int i) {
+    public Employee getEmployee(int i) {
         return null;
     }
 
@@ -31,6 +27,10 @@ public class Developer implements Employee {
         System.out.println("\tName =" + getName());
         System.out.println("\tSalary =" + getSalary());
         System.out.println("\t-------------");
+    }
+
+    public void add(Employee employee) {
+
     }
 
     public void remove(Employee employee) {

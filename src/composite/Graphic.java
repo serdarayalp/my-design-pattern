@@ -1,5 +1,5 @@
 package composite;
 
-interface Graphic {
+public interface Graphic {
     void print();
 }

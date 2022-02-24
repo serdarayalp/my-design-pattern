@@ -1,7 +1,5 @@
 package builder;
 
-import singleton.MySingleton;
-
 public class Main {
     public static void main(String[] args) {
         // Cake cake = new Cake.Builder(500, 500).butter(200).chocolate(300).build();
